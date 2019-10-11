@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/akronim</item>
+        <item>@font/aladin</item>
+        <item>@font/amita_bold</item>
+        <item>@font/anonymous_pro</item>
+        <item>@font/arvo_italic</item>
+        <item>@font/chewy</item>
+    </array>
+</resources>

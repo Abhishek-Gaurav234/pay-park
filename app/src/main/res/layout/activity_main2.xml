@@ -13,125 +13,85 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
-        
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="vertical"
             android:layout_height="wrap_content"
-            >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ss"
-        android:layout_marginTop="20dp"
-        android:text="REGISTER "
-        android:textSize="20sp"
-        android:layout_gravity="center"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/n1"
-        android:layout_below="@+id/ss"
-        android:layout_marginTop="50dp"
-        android:text="NAME : "
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/n1"
-        android:id="@+id/name"
-        android:layout_marginTop="30dp"
-        android:inputType="textMultiLine"
-        ></EditText>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/name"
-        android:id="@+id/c1"
-        android:layout_marginTop="50dp"
-        android:text="STANDARD :"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/c1"
-        android:id="@+id/std"
-        android:layout_marginTop="30dp"
-        android:inputType="textMultiLine"
-        ></EditText>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/std"
-        android:id="@+id/p1"
-        android:layout_marginTop="50dp"
-        android:text="PRN (USER NAME): "
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/p1"
-        android:id="@+id/prn"
-        android:layout_marginTop="30dp"
-        android:inputType="number"
-        ></EditText>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/prn"
-        android:id="@+id/p2"
-        android:layout_marginTop="50dp"
-        android:text="PASSWORD : "
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/p2"
-        android:id="@+id/pass"
-        android:layout_marginTop="30dp"
-        android:inputType="textPassword"
-        ></EditText>
+            android:orientation="vertical">
 
             <TextView
+                android:id="@+id/ss"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/pass"
-                android:id="@+id/wallet"
-                android:layout_marginTop="50dp"
-                android:text="WALLET AMOUNT : "
-                />
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="REGISTER "
+                android:textSize="20sp" />
 
             <EditText
+                android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/wallet"
-                android:id="@+id/amt"
+                android:layout_below="@+id/ss"
                 android:layout_marginTop="30dp"
-                android:inputType="number"
-                ></EditText>
+                android:fontFamily="casual"
+                android:hint="NAME"
+                android:inputType="textMultiLine"></EditText>
 
+
+            <EditText
+                android:id="@+id/std"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="30dp"
+                android:fontFamily="casual"
+                android:hint="CLASS"
+                android:inputType="textMultiLine"></EditText>
+
+
+            <EditText
+                android:id="@+id/prn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/std"
+                android:layout_marginTop="30dp"
+                android:fontFamily="casual"
+                android:hint="PRN"
+                android:inputType="number"></EditText>
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prn"
+                android:layout_marginTop="30dp"
+                android:fontFamily="casual"
+                android:hint="PASSWORD"
+                android:inputType="textPassword"></EditText>
+
+            <EditText
+                android:id="@+id/amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass"
+                android:layout_marginTop="30dp"
+                android:fontFamily="casual"
+                android:hint="WALLET AMOUNT"
+                android:inputType="number"></EditText>
 
 
             <Button
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/amt"
-        android:layout_marginTop="50dp"
-        android:text="SUBMIT"
-        android:id="@+id/sub"
+                android:id="@+id/sub"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/amt"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
                 android:background="@drawable/button_bg1"
-        android:layout_gravity="center"
-        ></Button>
+                android:text="SUBMIT"></Button>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

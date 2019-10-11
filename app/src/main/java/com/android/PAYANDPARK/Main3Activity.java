@@ -55,7 +55,7 @@ public class Main3Activity extends AppCompatActivity {
                 catch(NumberFormatException e)
                 {
                     e.printStackTrace();
-                    Toast.makeText(Main3Activity.this, "INCORRECT USERNAME OR PASSWORD1", Toast.LENGTH_LONG).show();
+                    Toast.makeText(Main3Activity.this, "INCORRECT USERNAME OR PASSWORD", Toast.LENGTH_LONG).show();
                 }
             }
         });

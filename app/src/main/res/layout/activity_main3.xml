@@ -14,51 +14,51 @@
         android:id="@+id/u"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:text="USERNAME"
-        android:layout_centerHorizontal="true"/>
+        android:fontFamily="casual"
+        android:text="SIGN IN"
+        android:textSize="24sp" />
+
 
     <EditText
+        android:id="@+id/uname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/u"
-        android:id="@+id/uname"
-        android:layout_marginTop="30dp"
-        android:inputType="number"
-        ></EditText>
-
-    <TextView
-        android:id="@+id/p"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_below="@+id/uname"
-        android:text="PASSWORD"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="156dp"
+        android:hint="USERNAME(PRN)"
+        android:inputType="number"></EditText>
 
     <EditText
+        android:id="@+id/pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/p"
-        android:id="@+id/pass"
-        android:layout_marginTop="30dp"
-        android:inputType="textPassword"
-        ></EditText>
-
+        android:layout_below="@+id/uname"
+        android:layout_marginTop="41dp"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"></EditText>
 
     <Button
+        android:id="@+id/sub"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_below="@+id/pass"
-        android:layout_marginTop="50dp"
-        android:text="SUBMIT"
-        android:id="@+id/sub"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/button_bg3"
-        ></Button>
+        android:layout_marginTop="53dp"
+        android:background="@drawable/button_bg2"
+        android:text="LOGIN"
+        android:textSize="24sp"></Button>
 
-
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="143dp"
+        android:layout_height="147dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="143dp"
+        android:layout_centerHorizontal="true"
+        android:foregroundGravity="center_horizontal"
+        android:src="@drawable/userimage1" />
 
 
 </RelativeLayout>

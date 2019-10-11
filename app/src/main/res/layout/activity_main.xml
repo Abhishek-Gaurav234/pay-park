@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:background="@drawable/bgtheme2"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:background="@drawable/bgtheme2"
-    >
+    android:textAlignment="gravity"
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/signup"
@@ -17,41 +17,39 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="236dp"
         android:background="@drawable/button_bg1"
+        android:fontFamily="serif"
         android:text="SIGN UP"
-        android:textSize="25sp"></Button>
+        android:textSize="30sp"></Button>
 
     <Button
+        android:id="@+id/login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/signup"
-        android:background="@drawable/button_bg2"
         android:layout_marginTop="50dp"
+        android:background="@drawable/button_bg2"
+        android:fontFamily="serif"
         android:text="LOG IN"
-        android:textSize="25sp"
-        android:id="@+id/login"
-        ></Button>
+        android:textSize="30sp"></Button>
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="146dp"
+        android:layout_width="384dp"
+        android:layout_height="122dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="49dp"
-        app:srcCompat="@drawable/logo4"
-        />
+        android:layout_marginTop="66dp"
+        app:srcCompat="@drawable/logo4" />
 
     <Button
         android:id="@+id/admin"
-        android:layout_width="222dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
+        android:layout_width="141dp"
+        android:layout_height="40dp"
         android:layout_below="@+id/login"
+        android:layout_marginTop="46dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="103dp"
-        android:layout_marginStart="103dp"
-        android:layout_marginTop="45dp"
-        android:text="ADMIN" />
+        android:background="@drawable/button_bg5"
+        android:text="ADMIN"
+        android:textSize="18sp" />
 
 
 </RelativeLayout>
